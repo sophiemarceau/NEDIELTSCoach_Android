@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+     >
+
+    <!-- <ListView
+        android:id="@+id/listview_class_main"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+         >
+    </ListView> -->
+    <com.handmark.pulltorefresh.library.PullToRefreshListView  
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"  
+        android:id="@+id/listview_class_main"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"   
+        ptr:ptrAnimationStyle="flip"  
+        ptr:ptrHeaderBackground="#383838"  
+        ptr:ptrHeaderTextColor="#FFFFFF"  
+        />
+    <TextView  
+        android:id="@+id/txt_warn_nulldata_class_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:drawableTop="@drawable/icon_null_data"
+        android:text="暂无课程信息"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

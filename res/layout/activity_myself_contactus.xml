@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/grays">
+    
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="联系我们"
+            android:textColor="@color/font_main_color"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/imageview_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:src="@drawable/imageview_back" />
+        <TextView
+            android:id="@+id/textview_send"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="发送" 
+            android:textColor="@color/lightgrey"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/red" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="@color/grays" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200sp"
+        android:orientation="vertical" 
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/edittext_contactus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/activity_myself_contactus_hint" 
+            android:layout_margin="5sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

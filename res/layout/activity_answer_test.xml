@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/txt_name_answer_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="阅读6.5分入学测试"
+             android:ellipsize="end"
+               android:maxEms="8"
+           android:singleLine="true"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/img_back_answer_test"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:src="@drawable/select_imgview_back" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/font_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="@color/grays" >
+
+        <Button
+            android:id="@+id/btn_chooseall_answer_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_testmodel_answer_test"
+            android:layout_alignBottom="@+id/txt_testmodel_answer_test"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/txt_testmodel_answer_test"
+                        android:textColor="@color/white"
+            android:background="@drawable/anniuxuanzhong"
+
+            android:text="整套提交" />
+
+        <EditText
+            android:id="@+id/ed_content_answer_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_answer_model"
+            android:layout_alignBottom="@+id/txt_answer_model"
+            android:layout_alignLeft="@+id/btn_chooseall_answer_test"
+            android:inputType="number"
+            android:ems="8"
+            android:gravity="center_horizontal"
+            />
+        <EditText
+            android:id="@+id/ed_content_answer_test_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_answer_model"
+            android:layout_alignBottom="@+id/txt_answer_model"
+            android:layout_alignLeft="@+id/btn_chooseall_answer_test"
+            android:ems="8"
+            android:visibility="gone"
+            android:digits="1234567890%"
+            android:gravity="center_horizontal"
+            android:maxLength="4"
+             />
+
+        <Button
+            android:id="@+id/btn_choosesingle_answer_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_chooseall_answer_test"
+            android:layout_alignBottom="@+id/btn_chooseall_answer_test"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/anniu_select"
+        	android:textColor="@color/red"
+      
+            android:text="单题提交" />
+
+        <TextView
+            android:id="@+id/txt_testmodel_answer_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="37dp"
+            android:text="答题模式"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_answer_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_testmodel_answer_test"
+            android:layout_below="@+id/btn_chooseall_answer_test"
+            android:layout_marginTop="25dp"
+            android:text="答题时间"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_answer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ed_content_answer_test"
+            android:layout_alignRight="@+id/btn_choosesingle_answer_test"
+            android:layout_marginRight="11dp"
+            android:text="分钟"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="275dp" >
+
+        <ListView
+            android:id="@+id/listview_answer_test"
+            
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C0C0C0" >
+
+        <Button
+            android:id="@+id/btn_sure_answer_test"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_clickanniu"
+            android:text="确认"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

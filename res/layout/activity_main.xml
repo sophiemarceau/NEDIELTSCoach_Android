@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/tab_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@color/themegrey" />
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingTop="2.0dip" >
+
+            <RadioButton
+                android:id="@+id/main_tab_schedule"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_main_radiobutton_studyplan"
+                android:text="@string/main_navigation_schedule" />
+
+            <RadioButton
+                android:id="@+id/main_tab_class"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/selector_main_radiobutton_class"
+                android:text="@string/main_navigation_class" />
+
+            <RadioButton
+                android:id="@+id/main_tab_classroom"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/selector_main_radiobutton_classroom"
+                android:text="@string/main_navigation_classroom" />
+
+            <RadioButton
+                android:id="@+id/main_tab_data"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/selector_main_radiobutton_study"
+                android:text="@string/main_navigation_data" />
+
+            <RadioButton
+                android:id="@+id/main_tab_chat"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/selector_main_radiobutton_myself"
+                android:text="@string/main_navigation_chat" />
+            
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

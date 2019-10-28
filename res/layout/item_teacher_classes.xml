@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+
+	       <RadioButton
+	           android:id="@+id/item_radio_teacher_classes"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:button="@null"
+	           android:textSize="1sp"
+	           android:layout_centerVertical="true"
+	           android:background="@drawable/selector_radiobutton_choose"
+	           android:layout_marginLeft="5dp" />
+
+       <TextView
+           android:id="@+id/item_txtname_teacher_classes"
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/item_txtnum_teacher_classes"
+           android:layout_marginBottom="30dp"
+           android:layout_marginLeft="35dp"
+           android:text="课堂名称" />
+
+       <TextView
+           android:id="@+id/item_txtnum_teacher_classes"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="35dp"
+           android:layout_marginBottom="3dp"
+           android:text="课堂编号" />
+
+       <TextView
+           android:id="@+id/item_txtcode_teacher_classes"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/item_txtnum_teacher_classes"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="22dp"
+           android:text="课次号" />
+
+   </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/rb_class_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_red"
+            android:gravity="center"
+            android:text="上课中"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/rb_class_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/center_null"
+            android:gravity="center"
+            android:text="未开课"
+            android:textColor="@color/red"
+             />
+
+        <TextView
+            android:id="@+id/rb_class_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="已结课" 
+            android:textColor="@color/red"           
+            android:background="@drawable/right_kong" />
+    </LinearLayout>
+
+</LinearLayout>

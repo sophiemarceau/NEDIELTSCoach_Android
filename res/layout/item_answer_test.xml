@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+
+    <CheckBox
+        android:id="@+id/checkbox_answer_test_item"
+        style="@style/CustomCheckboxTheme"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/txt_num_answer_test_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_content_answer_test_item"
+        android:layout_alignLeft="@+id/checkbox_answer_test_item"
+        android:layout_marginLeft="24dp"
+        android:text="题号" />
+
+    <TextView
+        android:id="@+id/txt_content_answer_test_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/txt_num_answer_test_item"
+        android:text="Medium Text" />
+    
+</RelativeLayout>
+    
+</RelativeLayout>

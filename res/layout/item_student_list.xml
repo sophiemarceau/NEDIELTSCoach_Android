@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/stulist_head_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/mor" />
+
+        <RelativeLayout
+            android:id="@+id/dayrelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stulist_name"
+            android:layout_below="@+id/stulist_num" >
+            <TextView
+                android:id="@+id/stulist_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="雅思考试倒计时："
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/stulist_downdays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/stulist_time"
+                android:layout_alignBottom="@+id/stulist_time"
+                android:layout_toRightOf="@+id/stulist_time"
+                android:text="32"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+            <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stulist_downdays"
+            android:text="天" 
+             android:textColor="@color/gray"
+            android:textSize="10sp"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/stulist_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stulist_name"
+            android:layout_below="@+id/stulist_name"
+            android:text="TextView"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/stulist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/stulist_head_img"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/stulist_head_img"
+            android:text="1234567890"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/finished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dayrelative"
+            android:layout_alignBottom="@+id/dayrelative"
+            android:layout_alignRight="@+id/stulist_finished"
+            android:text="任务完成率"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/stulist_finished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/finished"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="21dp"
+            android:text="67"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/stulist_sex_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/stulist_name"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/nan" />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

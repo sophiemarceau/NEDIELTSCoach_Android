@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:text="添加练习"
+            />
+
+        <ImageButton
+            android:id="@+id/back_stustart_add_img"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:src="@drawable/imageview_back" />
+        
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_add_stustart_sure"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stu_ed_add_test"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp"
+            android:background="@drawable/btn_clickanniu"
+            android:text="添加到课堂练习中"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/stu_ed_add_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/add_stustart_text"
+            android:layout_alignBottom="@+id/add_stustart_text"
+            android:layout_alignRight="@+id/btn_add_stustart_sure"
+            android:layout_alignEnd="@+id/btn_add_stustart_sure"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:ems="10"
+            android:hint="请输入练习题编号" />
+
+        <TextView
+            android:id="@+id/add_stustart_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="40dp"
+            android:text="编  号"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/red"
+        />
+    
+
+</LinearLayout>

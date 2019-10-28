@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.example.hello"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/describe_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <TextView
+            android:id="@+id/item_txtname_test_report_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="13dp"
+            android:text="1.选择题名称"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_txtanswer_test_report_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_txtname_test_report_choose"
+            android:layout_below="@+id/item_txtname_test_report_choose"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:text="正确答案：B"
+            android:textColor="@color/font_color" />
+
+        <com.lelts.tool.RoundProgressBar
+            android:id="@+id/roundProgressBar3_choose"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/item_txtname_test_report_choose"
+            android:layout_marginRight="42dp"
+            android_custom:roundColor="#e84d60"
+            android_custom:roundProgressColor="#e84d60"
+            android_custom:roundWidth="6dip"
+            android_custom:textIsDisplayable="false" />
+
+        <com.lelts.tool.RoundProgressBar
+            android:id="@+id/roundProgressBar2_choose"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_alignBottom="@+id/roundProgressBar3_choose"
+            android:layout_alignLeft="@+id/roundProgressBar3_choose"
+            android_custom:roundColor="#D1D1D1"
+            android_custom:roundProgressColor="#e84d60"
+            android_custom:roundWidth="6dip"
+            android_custom:textColor="#e84d60"
+            android_custom:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_txttrue_test_report_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_txtname_test_report_choose"
+            android:layout_alignBottom="@+id/item_txtname_test_report_choose"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/zhengquelv"
+            android:gravity="center"
+            android:text="正确率"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/describe_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1dp"
+            android:layout_height="205dp"
+            android:layout_toRightOf="@+id/image_choose"
+            android:background="@color/describe_color" />
+
+        <ImageView
+            android:id="@+id/image_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/view1"
+            android:src="@drawable/xian" />
+        
+        <View
+            android:id="@+id/stub"
+            android:layout_alignRight="@+id/image_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/view1" />
+
+	    <com.lels.costum_widget.ReportView 
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_toRightOf="@+id/stub"
+	   	    android:layout_alignTop="@+id/view1"
+	   	    android:layout_alignBottom="@+id/stub"
+	   	    android:id="@+id/reportview" />
+    </RelativeLayout>
+
+</LinearLayout>

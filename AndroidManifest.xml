@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hello"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    
+    <!-- sdcard中读写数据的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 闹钟的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.lelts.tool.ImageLoder"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name="com.lelts.activity.main.MainActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.welcome.GuidPageActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Renwu_contentActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Renwu_doccontentActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Renwu_zlcontentActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.classroom.AnswerSheetActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.classroom.AnswerTestActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.classroom.ClassRoomConnectionRoomActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.classroom.ClassRoomStudent"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.classroom.StartAnswerTest"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.classroom.AddTestActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.classroom.TestReportActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.classroom.TestReportMoreAnswerActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.welcome.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <!--投票  -->
+         <activity
+            android:name="com.lels.vote.activity.VoteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" 
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+                 <activity
+            android:name="com.lels.vote.activity.VotedetailsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+                      <activity
+            android:name="com.lels.vote.activity.VotehistoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+         
+         
+        <activity
+            android:name="com.lels.activity.myself.MyselfActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.group.activity.GroupActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfMessageActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfMessageTestActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfCollectActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfRemindActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfResultActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfSyssetActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfContactusActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfUseHelpActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfMoreActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.activity.classes.Class_no_ContentActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.data.DataScreenActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.data.StudyADVDetailActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.activity.classes.Class_ing_ContentActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Stu_ListActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Stu_StartActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Stu_start_EndActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Stu_TaskActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Stu_CorrectActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Correct_listener_mkActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Correct_writeActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Add_StuStart_Activity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.data.DataDetailActivity"
+            android:screenOrientation="portrait" 
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lelts.fragment.data.DataForDocxDetailActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Correct_listener_lxActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfMessageDetailActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.student.Start_cotent_Activity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfAddRemindActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+            <activity
+            android:name="com.lels.activity.myself.RemindAlterAddressActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.ImageActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.activity.myself.MyselfRemindDeatilActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 注册广播 -->
+        <receiver
+            android:name="com.lels.alarm.AlarmReceiver"
+            android:process=":remote" >
+        </receiver>
+
+        <activity
+            android:name="com.lels.alarm.AlarmActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.random.activity.RandomActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lels.manual.activity.ManualActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.lels.manual.activity.ManualSelectActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        
+        <!-- 聊天模块 -->
+        <activity
+            android:name="com.lelts.chatroom.activity.ConversationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.hello"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lelts.chatroom.activity.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.hello"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        
+        
+         <!-- begin imlib request -->
+
+        <activity
+            android:name="io.rong.voipkit.activity.CallSideActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="io.rong.imkit"
+                    android:pathPrefix="/VoIPCall"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.voipkit.activity.CalledSideActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="io.rong.imkit"
+                    android:pathPrefix="/VoIPAccept"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="io.rong.push.PushService"
+            android:process="io.rong.push" > <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.push" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="io.rong.push.CommandService"
+            android:process="io.rong.push" > <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.command" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.rong.push.PushReceiver"
+            android:process="io.rong.push" > <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="io.rong.imkit.tools.SelectPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.PreviewPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.RongWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.widget.provider.TakingPicturesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" >
+        </service>
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver android:name="io.rong.imlib.ipc.PushMessageReceiver" >
+            <intent-filter>
+                <action android:name="io.rong.push.message" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="p5tvi9dst30x4" />
+        <!--自己的c9kqb3rdk02sj end 雅思的p5tvi9dst30x4-->
+        
+        <activity
+            android:name="com.lelts.chatroom.activity.ChatGroupActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.lelts.chatroom.activity.ChatPhotoActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.lelts.chatroom.activity.KickOffDialog"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <service
+            android:name="com.lels.alarm.AlarmService"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.lels.main.activity.MainActivity" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.lels.bean.Myservice"
+            android:enabled="true" >
+        </service>
+    </application>
+
+</manifest>

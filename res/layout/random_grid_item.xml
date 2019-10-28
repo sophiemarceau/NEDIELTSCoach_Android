@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#FFDDF8" 
+            android:layout_weight="1"
+           />
+
+        <LinearLayout
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="10"
+             >
+
+            <TextView
+                android:id="@+id/item_group_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#FFE8EC"
+                android:gravity="center"
+                android:text="第-组" />
+
+            <com.lelts.tool.GridViewForGridview
+                android:id="@+id/item_group_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="5" >
+            </com.lelts.tool.GridViewForGridview>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFDDF8" >
+            </View>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#FFDDF8"
+            android:layout_weight="1" 
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

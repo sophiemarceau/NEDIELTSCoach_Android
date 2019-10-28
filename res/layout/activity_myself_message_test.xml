@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:library="http://schemas.android.com/apk/res/com.example.hello"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的消息"
+            android:textColor="@color/font_main_color"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/imageview_back"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:src="@drawable/imageview_back" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/red" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/grays" />
+
+    <me.com.demo.app.view.FastListView
+        android:id="@+id/listview_myself_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        library:dividerDrawalbe="#292929"
+        library:fastItemHeight="60dp"
+        library:fastSwipeWidth="200dp"
+        library:supportFresh="true"
+        library:supportSwipe="true"
+        library:support_load="true" >
+    </me.com.demo.app.view.FastListView>
+
+    <RelativeLayout
+        android:id="@+id/studyOnLine_no_data"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/studyOnLine_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/icon_null_data"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:descendantFocusability="blocksDescendants" >
+
+        <ImageView
+            android:id="@+id/task_num_icon"
+            android:layout_width="20dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ziliao_hong" />
+
+        <View
+            android:id="@+id/task_line_up"
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/task_renwuliebiao_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/task_num_icon"
+            android:layout_toRightOf="@+id/task_num_icon"
+            android:background="@color/gray" />
+
+        <View
+            android:id="@+id/task_line_down"
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/task_renwuliebiao_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/task_num_icon"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/task_renwuliebiao_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/task_num_icon"
+            android:src="@drawable/renwuliebiao_hong" />
+
+        <TextView
+            android:id="@+id/task_title"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@+id/task_tixing"
+            android:text="图书馆场口语练习" />
+
+        <ImageView
+            android:id="@+id/task_tixing"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:focusable="false"
+            android:src="@drawable/tixing" />
+    </RelativeLayout>
+
+</RelativeLayout>

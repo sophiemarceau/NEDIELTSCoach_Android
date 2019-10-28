@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    
+       <TextView
+        android:id="@+id/txt_tishi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="请先同步到课堂" />
+
+    <TextView
+        android:id="@+id/txt_tishi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txt_tishi1"
+        android:layout_below="@+id/txt_tishi1"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:text="选择答题形式前，请先" />
+
+    <TextView
+        android:id="@+id/txt_tishi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_tishi2"
+        android:layout_alignBottom="@+id/txt_tishi2"
+        android:layout_alignLeft="@+id/txt_tishi1"
+        android:layout_marginLeft="75dp"
+        android:textColor="@color/red"
+        android:text="同步到所在课堂" />
+
+    <TextView
+        android:id="@+id/txt_tishi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_tishi2"
+        android:layout_below="@+id/txt_tishi2"
+        android:layout_marginTop="20dp"
+        android:text="再选择练习形式。" />
+
+    <Button
+        android:id="@+id/waing_btn_sure"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_tishi4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_clickanniu"
+        android:text="确定" />
+
+    <ImageButton
+        android:id="@+id/waing_btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:background="@null"
+        android:src="@drawable/guanbi" />
+
+</RelativeLayout>

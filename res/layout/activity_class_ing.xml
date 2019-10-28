@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grays"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_classing_one"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/classes_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="班级详情"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/ing_class_img"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:background="@color/white"
+            android:src="@drawable/imageview_back"
+             />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/classes_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="YS000123"
+            android:textColor="@color/blank"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/ing_class_num_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/classes_num"
+            android:layout_alignBottom="@+id/classes_num"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/classes_num"
+            android:ellipsize="end"
+            android:maxEms="5"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/classes_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/classes_num"
+            android:layout_below="@+id/classes_num"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/ioc_shijian2x" />
+        <!-- android:entries="@array/stu_class" -->
+
+        <TextView
+            android:id="@+id/classes_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/classes_time"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/classes_time"
+            android:text="2015.02.28 15:00 - 17:00"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/ing_adress_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/classes_time_value"
+            android:layout_alignTop="@+id/classes_adress"
+            android:ellipsize="end"
+            android:maxEms="20"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/gray" />
+
+        <ImageView
+            android:id="@+id/classes_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/classes_time"
+            android:layout_below="@+id/classes_time"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ioc_dizhi2x" />
+
+        <RelativeLayout
+            android:id="@+id/ing_linear_tv"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/classes_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/xialaxuanzhong" >
+
+            <TextView
+                android:id="@+id/ing_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ing_tv"
+                android:layout_alignBottom="@+id/ing_tv"
+                android:layout_toLeftOf="@+id/ing_tv"
+                android:text="第"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ing_tv"
+                android:layout_alignBottom="@+id/ing_tv"
+                android:layout_toRightOf="@+id/ing_tv"
+                android:text="课"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView3"
+                android:src="@drawable/jiantou2x" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_classing_tow"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="1dp"
+        
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/classes_teachers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="搭班老师"
+            android:textColor="@color/blank"
+            android:textSize="17sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/classes_teachers"
+            android:layout_margin="5dp"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <GridView
+                    android:id="@+id/grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:overScrollMode="never"
+                    android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/relative_warn_nulldata_clastudy"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:layout_below="@id/classes_teachers"
+             android:visibility="gone"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="当前无搭班老师"
+                android:textSize="18sp"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/stu_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="105dp"
+        android:layout_below="@id/relative_classing_tow"
+        android:layout_marginTop="1dp"
+        android:background="@color/white" >
+
+        <include
+            android:id="@+id/in1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/includ_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stu_score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stu_linear"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="模考成绩"
+            android:textColor="@color/blank"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/frag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

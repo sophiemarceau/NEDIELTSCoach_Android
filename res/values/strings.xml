@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">雅思互动学习平台二期</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_navigation_schedule">计划</string>
+    <string name="main_navigation_class">班级</string>
+    <string name="main_navigation_classroom">课堂</string>
+    <string name="main_navigation_data">学习</string>
+    <string name="main_navigation_chat">聊天</string>
+    <string name="common_Loading">正在加载..</string>
+    <!-- 登录 页 string -->
+    
+    <string name="login_title">雅思互动学习平台教师端</string>
+    
+    
+    
+    
+    
+    <string name="fragment_classroom_txt_title">课堂互动</string>
+    <string name="fragment_classroom_txt_head">课堂暗号</string>
+    <string name="fragment_classroom_txt_remind">把这数据发给学员，同步到课堂练习</string>
+    <string name="fragment_classroom_btn_connection">同步到课堂</string>
+    <string name="fragment_classroom_btn_answer">答题卡</string>
+    <string name="fragment_classroom_btn_group">分组练</string>
+    <string name="fragment_classroom_btn_vote">投票题</string>
+    <string name="fragment_classroom_btn_responder">抢答器</string>
+    <string name="fragment_classroom_btn_more">更多</string>
+    
+    <string name="activity_myself_contactus_hint">想说什么，尽管咆哮吧!</string>
+     
+    <string name="activity_myself_usehelp_text">亲爱的同学们和朋友们，大家好  \n    噼里啪啦拉链 噼里啪啦拉链 噼里啪啦拉链 噼里啪啦拉链 噼里啪啦拉链 噼里啪啦拉链 噼里啪啦拉链 噼里啪啦拉链 噼里啪啦拉链 噼里啪啦拉链 </string>
+	<string name="chatroom_title">聊天室</string>
+	<string name="kick_content">您的账号在其他设备登陆,请注意账号安全!</string>
+	<string name="kick_confirm">确认</string>
+	<string name="chatroom_group_personal">群组学员</string>
+	<string name="first_title">雅思互动学习平台</string>
+</resources>

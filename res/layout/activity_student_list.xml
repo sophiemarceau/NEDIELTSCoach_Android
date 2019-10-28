@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grays"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_stulist_one"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/stulist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="学员列表"         
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/stulist_back_img"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:background="@color/white"
+            android:src="@drawable/imageview_back" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red" />
+    <ListView  
+        android:id="@+id/stu_list_listview"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"  
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        />
+    <RelativeLayout 
+        android:id="@+id/relative_warn_nulldata_clastudy"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        >
+        <TextView  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="暂无学员"
+        android:drawableTop="@drawable/icon_null_data"
+        android:textColor="@color/gray"
+        />
+    </RelativeLayout>
+</LinearLayout>

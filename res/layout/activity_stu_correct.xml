@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="@color/grays">
+
+    <RelativeLayout
+        android:id="@+id/stu_correct_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/stucorrect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="待批改列表"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/stucorrect_back_img"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:background="@color/white"
+            android:src="@drawable/imageview_back" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red" />
+   <!--  <ListView
+        android:id="@+id/stu_correct_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+         /> -->
+     <com.handmark.pulltorefresh.library.PullToRefreshListView  
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"  
+        android:id="@+id/stu_correct_listview"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"  
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"   
+        ptr:ptrAnimationStyle="flip"  
+        ptr:ptrHeaderBackground="#383838"  
+        ptr:ptrHeaderTextColor="#FFFFFF"
+       
+        />
+    <RelativeLayout 
+        android:id="@+id/relative_warn_nulldata_clastudy"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        >
+        <TextView  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/icon_null_data"
+        android:text="暂无待批改"
+        android:textColor="@color/gray"
+        />
+    </RelativeLayout>
+</LinearLayout>

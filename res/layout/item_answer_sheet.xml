@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+      <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:tag="back" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="6" />
+
+        <Button
+            android:id="@+id/btn_delete_answer_shheet_item"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@drawable/btn_clickanniu"
+            android:text="删除"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:tag="front" >
+
+        <TextView
+            android:id="@+id/txt_testname_answer_sheet_item"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:ellipsize="end"
+            android:maxEms="11"
+            android:text="阅读6.5分班长难句学习" />
+
+        <TextView
+            android:id="@+id/txt_testnum_answer_sheet_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:text="8" />
+
+        <TextView
+            android:id="@+id/num"
+                 android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_below="@id/txt_testnum_answer_sheet_item"
+            android:text="题目数量" />
+    </RelativeLayout>
+    
+
+</FrameLayout>

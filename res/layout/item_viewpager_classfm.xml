@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/classfm_linear"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+        <TextView
+            android:id="@+id/classfm_classnum"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="vipyadh12345" 
+           android:layout_marginLeft="10dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/classfm_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/classfm_averageNum"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="1234567890987654322"
+                android:textSize="15sp" 
+                />
+
+            <TextView
+                android:id="@+id/classfm_starttimeQuantum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/classfm_averageNum"
+                android:layout_alignLeft="@id/classfm_averageNum"
+               	android:layout_marginTop="8dp"
+                android:text="TextView" 
+                android:textColor="@color/gray"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/classfm_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/classfm_averageNum"
+               	android:layout_marginTop="8dp"
+               	android:layout_toRightOf="@id/classfm_starttimeQuantum"
+                android:text="-" 
+                android:textColor="@color/gray"
+                android:textSize="10sp"/>
+            
+            <TextView
+                android:id="@+id/classfm_endtimeQuantum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/classfm_averageNum"
+                android:layout_toRightOf="@id/classfm_"
+               	android:layout_marginTop="8dp"
+                android:text="TextView" 
+                android:textColor="@color/gray"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/classfm_totleNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:layout_marginRight="15dp"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

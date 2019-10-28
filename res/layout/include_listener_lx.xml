@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/score_tr_lx_lx_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+         android:background="@drawable/my_shape_file"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/score_cc_lx_lx_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+            android:background="@drawable/my_shape_file"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/score_lr_lx_lx_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+            android:background="@drawable/my_shape_file"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/score_gra_lx_lx_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+            android:background="@drawable/my_shape_file"
+            android:orientation="horizontal" >
+        </LinearLayout>
+</LinearLayout>

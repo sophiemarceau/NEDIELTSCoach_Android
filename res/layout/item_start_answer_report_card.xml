@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_txt_studentcode_start_answer"
+            android:layout_alignBottom="@+id/item_txt_studentcode_start_answer"
+            android:layout_alignRight="@+id/item_txt_answer_start_answer"
+            android:textSize="12sp"
+            android:textColor="@color/describe_color"
+            android:text="正确率" />
+
+        <ImageView
+            android:id="@+id/item_img_student_start_answer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/item_txt_studentname_start_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_txt_studentcode_start_answer"
+            android:layout_alignTop="@+id/item_img_student_start_answer"
+            android:textSize="16sp"
+            android:text="李响" />
+
+        <ImageView
+            android:id="@+id/item_img_sex_start_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_txt_studentname_start_answer"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/item_txt_studentname_start_answer"
+            android:src="@drawable/ioc_nan2x" />
+
+        <TextView
+            android:id="@+id/item_txt_countdowntime_start_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_txt_studentcode_start_answer"
+            android:layout_below="@+id/item_txt_studentname_start_answer"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/describe_color"
+            android:text="雅思考试倒计时：32天" />
+
+        <TextView
+            android:id="@+id/item_txt_studentcode_start_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_below="@+id/item_txt_countdowntime_start_answer"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/item_img_student_start_answer"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/describe_color"
+            android:text="BJADSAADS" />
+
+        <TextView
+            android:id="@+id/item_txt_time_start_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="4:45"
+             android:layout_alignBottom="@+id/item_txt_answer_start_answer"
+             android:textColor="@color/describe_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:text="时间"
+            android:layout_marginRight="27dp"
+            android:textColor="@color/describe_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_txt_answer_start_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_img_sex_start_answer"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@+id/item_txt_time_start_answer"
+            android:text="20%"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

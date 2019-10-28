@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/item_img_stu_testreport_moreanswer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/item_img_sex_testreport_moreanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_txt_name_testreport_moreanswer"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/item_txt_name_testreport_moreanswer"
+        android:src="@drawable/ioc_nan2x" />
+
+    <TextView
+        android:id="@+id/item_txt_time_testreport_moreanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_txt_code_testreport_moreanswer"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/item_img_stu_testreport_moreanswer"
+        android:text="雅思考试倒计时：32天"
+        android:textColor="@color/describe_color" />
+
+    <TextView
+        android:id="@+id/item_txt_name_testreport_moreanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_txt_code_testreport_moreanswer"
+        android:layout_alignTop="@+id/item_img_stu_testreport_moreanswer"
+        android:text="李想" />
+
+    <TextView
+        android:id="@+id/item_txt_code_testreport_moreanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_txt_time_testreport_moreanswer"
+        android:layout_below="@+id/item_img_sex_testreport_moreanswer"
+        android:text="BJ102312"
+        android:textColor="@color/describe_color" />
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/item_txt_name_testreport_moreanswer"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_txt_answer_testreport_moreanswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ggooo"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="11dp"
+            android:text="答案"
+            android:textColor="@color/describe_color" />
+    </LinearLayout>
+
+</RelativeLayout>

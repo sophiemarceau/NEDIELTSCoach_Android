@@ -1,0 +1,55 @@
+<resources>
+
+    <color name="pink">#FFB6C1</color>
+	<color name="lightgrey">#D3D3D3</color>
+	
+	  <!-- 主题背景  浅灰 -->
+	<color name="themegrey">#efefef</color>
+
+    <color name="red">#FF0000</color>
+    <color name="white">#ffffff</color>
+    <color name="blank">#000000</color>
+    <color name="azure">#F0FFFF</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="rili">#727272</color>
+    <color name="grays">#f0f0f0</color>
+    <color name="lightblue">#ADD8E6</color>
+    <!-- 亮蓝色 -->
+
+    <color name="darkslateblue">#483D8B</color>
+    <!-- 暗灰蓝色 -->
+    <color name="lightseagreen">#20B2AA</color>
+    <!-- 亮海蓝色 -->
+
+    <color name="deepskyblue">#00BFFF</color>
+    <!-- 深天蓝色 -->
+
+    <color name="blue">#0000FF</color>
+    <!-- 蓝色 -->
+
+    <color name="darkblue">#00008B</color>
+    <!-- 暗蓝色 -->
+
+    <color name="chose">#0099cc</color>
+    <color name="unchose">#00394c</color>
+    <color name="unchose2">#7c3b67</color>
+    <color name="calendar_bg">#dddddd</color>
+    <color name="calendar_bg2">#e3e4e7</color>
+
+    <!-- 字体颜色得瑟只 -->
+    <color name="font_color">#e84d60</color>
+
+    <!-- 分隔线的颜色 -->
+    <color name="line_divider">#d2d2d2</color>
+
+    <!-- 描述颜色 -->
+    <color name="describe_color">#aaaaaa</color>
+
+    <!-- 重要文字的颜色 -->
+    <color name="font_main_color">#565a5c</color>
+	<color name="black">#000000</color>
+	
+	<color name="red_default">#e84d60</color>
+	<!-- activity 的背景-->
+	<color name="transparent">#50000000</color>
+</resources>

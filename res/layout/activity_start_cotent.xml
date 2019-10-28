@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/startcotent_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/startcotent_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="练习详情"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/startcotent_back_img"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:background="@color/white"
+            android:src="@drawable/imageview_back" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red" />
+  	<View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/grays" />
+    <ListView
+        android:id="@+id/start_cotent_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        />
+
+</LinearLayout>

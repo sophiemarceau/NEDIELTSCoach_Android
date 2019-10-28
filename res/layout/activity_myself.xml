@@ -1,0 +1,464 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grays" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="个人中心"
+                android:textColor="@color/font_main_color"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/imageview_back"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:src="@drawable/imageview_back" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/red" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@color/line_divider" />
+
+        <ScrollView
+            android:id="@+id/myscrollviwe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="120sp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="5" >
+
+                    <ImageView
+                        android:id="@+id/imageview_myself_pic"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:src="@drawable/mor" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="1.2" >
+
+                            <TextView
+                                android:id="@+id/textview_myself_username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="31dp"
+                                android:layout_toRightOf="@+id/textview_myself_username"
+                                android:background="@drawable/icon_background_longcircle"
+                                android:gravity="center"
+                                android:text="阅读老师"
+                                android:textColor="@color/red"
+                                android:visibility="invisible" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6" >
+
+                            <TextView
+                                android:id="@+id/textview_myself_myschool"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawableLeft="@drawable/icon_address"
+                                android:textColor="@color/describe_color" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="1.2" >
+
+                            <TextView
+                                android:id="@+id/textview_myself_introduce"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:ellipsize="end"
+                                android:maxEms="10"
+                                android:singleLine="true" />
+
+                            <LinearLayout
+                                android:id="@+id/linear_alter_personal_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:visibility="invisible"
+                                android:weightSum="2" >
+
+                                <EditText
+                                    android:id="@+id/edittext_myself_introduce"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textSize="12dp"
+                                    android:windowSoftInputMode="adjustResize" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50" >
+
+                            <TextView
+                                android:id="@+id/textview_totle_class"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="bottom|center"
+                                android:textColor="@color/red"
+                                android:text="0"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:text="小时"
+                                android:textColor="@color/red"
+                                android:textSize="10dp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50"
+                            android:gravity="center"
+                            android:text="总授课量"
+                            android:textColor="@color/describe_color"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/line_divider" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50" >
+
+                            <TextView
+                                android:id="@+id/textview_preweek_class"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="bottom|center"
+                                android:textColor="@color/red"
+                                android:text="0"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:text="小时"
+                                android:textColor="@color/red"
+                                android:textSize="10dp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50"
+                            android:gravity="center"
+                            android:text="上周授课量"
+                            android:textColor="@color/describe_color"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/line_divider" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50" >
+
+                            <TextView
+                                android:id="@+id/textview_unfinish_class"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="bottom|center"
+                                android:textColor="@color/red"
+                                android:text="0"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:text="小时"
+                                android:textColor="@color/red"
+                                android:textSize="10dp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50"
+                            android:gravity="center"
+                            android:text="未完成授课量"
+                            android:textColor="@color/describe_color"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/line_divider" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <RelativeLayout
+                        android:id="@+id/radiobutton_myself_message"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageView1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:textSize="16sp"
+                             android:textColor="@color/describe_color"
+                            android:text="我的消息" />
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/selector_radiobutton_mymessage" />
+
+                        <ImageView
+                            android:id="@+id/imageview_message_dot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/textView13"
+                            android:layout_toRightOf="@+id/textView13"
+                            android:src="@drawable/icon_myself_message_dot"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/line_divider" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_myself_mycollect"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/selector_radiobutton_mycollect"
+                        android:gravity="center"
+                        android:textColor="@color/describe_color"
+                        android:text="我的收藏" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/line_divider" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_myself_remind"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/selector_radiobutton_myremind"
+                        android:gravity="center"
+                         android:textColor="@color/describe_color"
+                        android:text="我的提醒" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_divider" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_myself_sysset"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/selector_radiobutton_mysetting"
+                        android:gravity="center"
+                         android:textColor="@color/describe_color"
+                        android:text="系统设置" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/line_divider" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_myself_result"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/selector_radiobutton_myresult"
+                        android:gravity="center"
+                         android:textColor="@color/describe_color"
+                        android:text="学员成绩" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/line_divider" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_myself_contactus"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/selector_radiobutton_contactus"
+                        android:gravity="center"
+                         android:textColor="@color/describe_color"
+                        android:text="联系我们" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
